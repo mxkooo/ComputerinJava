@@ -2,8 +2,11 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SSDDrive implements Drive{
+public class SSDDrive extends AbstractDrive implements Drive{
 
+    public SSDDrive(int size, int speed) {
+        super(size, speed);
+    }
 
     private Map<String, File> files = new HashMap<>();
     @Override
@@ -24,4 +27,6 @@ public class SSDDrive implements Drive{
     public File findFile(String name) {
         return files.get(name);
     }
+
+
 }

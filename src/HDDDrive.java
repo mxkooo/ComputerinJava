@@ -2,7 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class HDDDrive implements Drive {
+public class HDDDrive extends AbstractDrive implements Drive {
+
+    public HDDDrive(int size, int speed) {
+        super(size, speed);
+    }
     private List<File> files = new ArrayList<>();
 
 
