@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        GIFImageFile gif = new GIFImageFile("nazwa1.gif", 100);
-        JPGImageFile jpg = new JPGImageFile("nazwa1.jpg", 200,80 );
-        MP3MusicFile mp3 = new MP3MusicFile("plik.mp3", 4000, "Marilyn Manson", "Broken Needle", 100);
+        GIFImageFile gif = new GIFImageFile("nazwa1.gif", 1);
+        JPGImageFile jpg = new JPGImageFile("nazwa1.jpg", 2,80 );
+        MP3MusicFile mp3 = new MP3MusicFile("plik.mp3", 4, "Marilyn Manson", "Broken Needle", 100);
 
         Drive drive = new HDDDrive(512, 3000);
         drive.addFile(gif);

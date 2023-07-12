@@ -7,6 +7,6 @@ public class GIFImageFile extends AbstractImageFile {
 
 
     public void showAnimation() {
-        System.out.println("showing funny gif");
+        System.out.println("Wyświetlanie gifa");
     }
 }

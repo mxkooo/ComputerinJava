@@ -12,6 +12,6 @@ public class JPGImageFile extends AbstractImageFile{
     }
 
     public void displayImage(){
-        System.out.println("Showing funny image");
+        System.out.println("Wyświetlanie zdjęcia");
     }
 }

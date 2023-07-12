@@ -5,13 +5,13 @@ public class Mouse implements USBDevice{
     }
     @Override
     public boolean connect() {
-        System.out.println("Mouse connected");
+        System.out.println("Mysz połączona");
         return true;
     }
 
     @Override
     public boolean disconnect() {
-        System.out.println("Mouse disconnected");
+        System.out.println("Mysz rozłączona");
         return true;
     }
 
