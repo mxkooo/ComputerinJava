@@ -35,7 +35,7 @@ public class SSDDrive extends AbstractDrive implements Drive{
         }else {
             System.out.println("Za mało miejsca na dysku");
         }
-        return 0;
+        return size;
     }
 
 
