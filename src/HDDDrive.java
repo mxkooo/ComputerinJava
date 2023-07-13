@@ -8,11 +8,21 @@ public class HDDDrive extends AbstractDrive implements Drive {
         super(size, speed);
     }
     private List<File> files = new ArrayList<>();
+    @Override
+    public int checkFileSize() {
+        if (files.size() <= size) {
+            System.out.println("Zgrywanie pliku na dysk");
+        }else {
+            System.out.println("Za mało miejsca na dysku");
+        }
+        return size;
+    }
 
 
     @Override
     public void addFile(File file) {
         files.add(file);
+        checkFileSize();
     }
 
     @Override
@@ -31,14 +41,5 @@ public class HDDDrive extends AbstractDrive implements Drive {
         return foundFile.orElseThrow();
     }
 
-    @Override
-    public int checkFileSize() {
-        if (files.size() <= size) {
-            System.out.println("Zgrywanie pliku na dysk");
-        }else {
-            System.out.println("Za mało miejsca na dysku");
-        }
-        return size;
-    }
 
 }
