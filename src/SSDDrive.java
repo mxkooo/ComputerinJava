@@ -30,7 +30,7 @@ public class SSDDrive extends AbstractDrive implements Drive{
 
     @Override
     public int checkFileSize() {
-        if (files.size() <= this.size) {
+        if (files.size() <= size) {
             System.out.println("Zgrywanie pliku na dysk");
         }else {
             System.out.println("Za mało miejsca na dysku");
