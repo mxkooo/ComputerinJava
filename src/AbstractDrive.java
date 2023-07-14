@@ -1,4 +1,4 @@
-public class AbstractDrive {
+public abstract class AbstractDrive {
     protected int size;
     protected int speed;
 
