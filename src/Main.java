@@ -4,7 +4,7 @@ public class Main {
         JPGImageFile jpg = new JPGImageFile("nazwa1.jpg", 200,80 );
         MP3MusicFile mp3 = new MP3MusicFile("plik.mp3", 4000, "Marilyn Manson", "Broken Needle", 100);
 
-        Drive drive = new HDDDrive(128, 3000);
+        Drive drive = new HDDDrive();
         drive.addFile(gif);
         drive.addFile(jpg);
         drive.addFile(mp3);
