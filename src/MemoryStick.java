@@ -8,23 +8,23 @@ public class MemoryStick implements USBDevice {
 
     @Override
     public boolean connect() {
-        System.out.println("Connected Memory Stick");
+        System.out.println("Podłączono pendrive");
         return true;
     }
 
     @Override
     public boolean disconnect() {
         if (!ejected) {
-            System.out.println("Please eject Memory Stick");
+            System.out.println("Wyjmij pendrive'a");
             return false;
         }else {
-            System.out.println("Memory Stick disconnected");
+            System.out.println("Pendrive odłączony");
             return true;
         }
     }
 
     public void eject(){
-        System.out.println("Ejecting Memory Stick");
+        System.out.println("Odłączanie pendrive'a");
         ejected = true;
     }
 

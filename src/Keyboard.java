@@ -1,17 +1,20 @@
-public class Mouse implements USBDevice{
+public class Keyboard implements USBDevice {
+
     private String name;
-    public Mouse(String name){
+
+    public Keyboard(String name) {
         this.name = name;
     }
+
     @Override
     public boolean connect() {
-        System.out.println("Mysz połączona");
+        System.out.println("Klawiatura podłączona");
         return true;
     }
 
     @Override
     public boolean disconnect() {
-        System.out.println("Mysz rozłączona");
+        System.out.println("Klawiatura odłączona");
         return true;
     }
 
