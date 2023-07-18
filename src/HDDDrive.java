@@ -2,13 +2,27 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class HDDDrive implements Drive {
+public class HDDDrive extends AbstractDrive implements Drive {
+
+    public HDDDrive(int size, int speed) {
+        super(size, speed);
+    }
     private List<File> files = new ArrayList<>();
+    @Override
+    public int checkFileSize() {
+        if (files.size() <= size) {
+            System.out.println("Zgrywanie pliku na dysk");
+        }else {
+            System.out.println("Za mało miejsca na dysku");
+        }
+        return size;
+    }
 
 
     @Override
     public void addFile(File file) {
         files.add(file);
+        checkFileSize();
     }
 
     @Override
@@ -26,5 +40,6 @@ public class HDDDrive implements Drive {
 
         return foundFile.orElseThrow();
     }
+
 
 }

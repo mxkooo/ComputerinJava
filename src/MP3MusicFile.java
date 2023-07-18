@@ -7,7 +7,7 @@ public class MP3MusicFile extends AbstractMusicFile{
 
     @Override
     public void play() {
-        System.out.println("Playing mp3 file");
+        System.out.println("Odsłuchiwanie pliku mp3");
     }
     public int getQuality() {
         return this.quality;
