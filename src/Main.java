@@ -6,6 +6,7 @@ public class Main {
         MP4VideoFile mp4 = new MP4VideoFile("plik.mp3", 8, "Shrek", 2.5, 100);
         Processor ryzen = new Processor(3.6, 16, "AM4");
 
+
         Drive drive = new HDDDrive(512, 3000);
 
         drive.addFile(gif);
