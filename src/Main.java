@@ -7,6 +7,7 @@ public class Main {
         Processor ryzen = new Processor(3.6, 16, "AM4");
 
 
+
         Drive drive = new HDDDrive(512, 3000);
 
         drive.addFile(gif);
