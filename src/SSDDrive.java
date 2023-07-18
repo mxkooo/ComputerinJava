@@ -11,20 +11,15 @@ public class SSDDrive extends AbstractDrive implements Drive {
     }
 
     private Map<String, File> files = new HashMap<>();
+
     @Override
-    public int checkFileSize() {
+    public void addFile(File file) {
         if (files.size() <= size) {
-            System.out.println("Zgrywanie pliku na dysk");
+            files.put(file.getName(), file);
             size += files.size();
         }else {
             System.out.println("Za mało miejsca na dysku");
         }
-        return size;
-    }
-    @Override
-    public void addFile(File file) {
-        files.put(file.getName(), file);
-        checkFileSize();
     }
 
     @Override
