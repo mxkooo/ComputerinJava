@@ -1,8 +1,10 @@
+//import AbstractDrive;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SSDDrive extends AbstractDrive implements Drive{
+public class SSDDrive extends AbstractDrive implements Drive {
 
     public SSDDrive(int size, int speed) {
         super(size, speed);
@@ -13,6 +15,7 @@ public class SSDDrive extends AbstractDrive implements Drive{
     public int checkFileSize() {
         if (files.size() <= size) {
             System.out.println("Zgrywanie pliku na dysk");
+            size += files.size();
         }else {
             System.out.println("Za mało miejsca na dysku");
         }

@@ -1,3 +1,5 @@
+//import AbstractDrive;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -12,6 +14,7 @@ public class HDDDrive extends AbstractDrive implements Drive {
     public int checkFileSize() {
         if (files.size() <= size) {
             System.out.println("Zgrywanie pliku na dysk");
+            size += files.size();
         }else {
             System.out.println("Za mało miejsca na dysku");
         }
