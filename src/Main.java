@@ -8,10 +8,15 @@ public class Main {
 
         Drive drive = new HDDDrive(512, 3000);
 
+
+        drive.actualMemory();
         drive.addFile(gif);
         drive.addFile(jpg);
-        drive.addFile(mp3);
-        
+//        drive.addFile(mp3);
+//        System.out.println("----------");
+        drive.actualMemory();
+
+
         drive.listFiles();
         File file = drive.findFile("plik.mp3");
         System.out.println(file.getSize());

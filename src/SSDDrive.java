@@ -16,11 +16,12 @@ public class SSDDrive extends AbstractDrive implements Drive {
     public void addFile(File file) {
         if (files.size() <= size) {
             files.put(file.getName(), file);
-            size += files.size();
+            size -= file.getSize();
         }else {
             System.out.println("Za mało miejsca na dysku");
         }
     }
+
 
     @Override
     public void listFiles() {
@@ -36,6 +37,10 @@ public class SSDDrive extends AbstractDrive implements Drive {
         return files.get(name);
     }
 
+    @Override
+    public void actualMemory() {
+        System.out.println("Aktualnie zostało: " + size + "GB pamięci");
+    }
 
 
 }

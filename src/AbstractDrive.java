@@ -1,6 +1,7 @@
 public abstract class AbstractDrive {
     protected int size;
     protected int speed;
+    protected int memoryLeft = size;
 
     public AbstractDrive(int size, int speed) {
         this.size = size;

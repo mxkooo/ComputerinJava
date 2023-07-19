@@ -15,7 +15,7 @@ public class HDDDrive extends AbstractDrive implements Drive {
     public void addFile(File file) {
         if (files.size() <= size) {
             files.add(file);
-            size += files.size();
+            size -= file.getSize();
         }else {
             System.out.println("Za mało miejsca na dysku");
         }
@@ -38,5 +38,9 @@ public class HDDDrive extends AbstractDrive implements Drive {
         return foundFile.orElseThrow();
     }
 
+    @Override
+    public void actualMemory() {
+        System.out.println("Aktualnie zostało: " + size + "GB pamięci");
+    }
 
 }
