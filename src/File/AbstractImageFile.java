@@ -1,4 +1,6 @@
-public abstract class AbstractImageFile extends AbstractFile{
+package File;
+
+public abstract class AbstractImageFile extends AbstractFile {
 
 
     protected AbstractImageFile(String name, int size) {

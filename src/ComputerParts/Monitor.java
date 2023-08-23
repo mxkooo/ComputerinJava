@@ -1,3 +1,5 @@
+package ComputerParts;
+
 public class Monitor {
     private int width = 3840;
     private int height = 1920;

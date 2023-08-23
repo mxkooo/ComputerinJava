@@ -1,4 +1,6 @@
-public class JPGImageFile extends AbstractImageFile{
+package File;
+
+public class JPGImageFile extends AbstractImageFile {
 
     private int compression;
 

@@ -1,4 +1,6 @@
-//import AbstractDrive;
+package Drive;//import Drive.Drive.AbstractDrive;
+
+import File.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,17 +12,6 @@ public class HDDDrive extends AbstractDrive implements Drive {
         super(size, speed);
     }
     private List<File> files = new ArrayList<>();
-
-    @Override
-    public void addFile(File file) {
-        if (files.size() <= size) {
-            files.add(file);
-            size -= file.getSize();
-        }else {
-            System.out.println("Za mało miejsca na dysku");
-        }
-
-    }
 
     @Override
     public void listFiles() {
@@ -41,6 +32,26 @@ public class HDDDrive extends AbstractDrive implements Drive {
     @Override
     public void actualMemory() {
         System.out.println("Aktualnie zostało: " + size + "GB pamięci");
+    }
+
+    @Override
+    public void addFile(JPGImageFile jpg) {
+        if (files.size() <= size) {
+            files.add(jpg);
+            size -= jpg.getSize();
+        }else {
+            System.out.println("Za mało miejsca na dysku");
+        }
+    }
+
+    @Override
+    public void addFile(GIFImageFile gif) {
+        if (files.size() <= size) {
+            files.add(gif);
+            size -= gif.getSize();
+        }else {
+            System.out.println("Za mało miejsca na dysku");
+        }
     }
 
 }

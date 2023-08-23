@@ -1,3 +1,5 @@
+package ComputerParts;
+
 public class GraphicCard {
     private int memoryRam;
     private int memorySpeed;

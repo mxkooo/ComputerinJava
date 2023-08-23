@@ -1,3 +1,5 @@
+package USBDevices;
+
 public class Keyboard implements USBDevice {
 
     private String name;

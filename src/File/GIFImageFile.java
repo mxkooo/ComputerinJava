@@ -1,3 +1,5 @@
+package File;
+
 public class GIFImageFile extends AbstractImageFile {
 
     public GIFImageFile(String name, int size) {

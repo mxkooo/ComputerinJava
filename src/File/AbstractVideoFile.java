@@ -1,3 +1,5 @@
+package File;
+
 public abstract class AbstractVideoFile extends AbstractFile implements VideoFile {
     protected String title;
     protected double length;

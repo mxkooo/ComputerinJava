@@ -1,3 +1,8 @@
+import ComputerParts.Processor;
+import Drive.Drive;
+import Drive.HDDDrive;
+import File.*;
+
 public class Main {
     public static void main(String[] args) {
         GIFImageFile gif = new GIFImageFile("nazwa1.gif", 1);

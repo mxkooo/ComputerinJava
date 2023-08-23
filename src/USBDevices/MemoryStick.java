@@ -1,3 +1,5 @@
+package USBDevices;
+
 public class MemoryStick implements USBDevice {
     private String name;
     private boolean ejected = false;

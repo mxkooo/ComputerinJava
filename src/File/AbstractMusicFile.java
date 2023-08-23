@@ -1,3 +1,5 @@
+package File;
+
 public abstract class AbstractMusicFile extends AbstractFile implements MusicFile{
     protected String bandName;
     protected String title;

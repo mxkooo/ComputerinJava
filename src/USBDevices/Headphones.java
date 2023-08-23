@@ -1,3 +1,5 @@
+package USBDevices;
+
 public class Headphones {
     private final String name;
 

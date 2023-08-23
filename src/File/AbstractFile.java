@@ -1,4 +1,6 @@
-public abstract class AbstractFile implements File{
+package File;
+
+public abstract class AbstractFile implements File {
     protected String name;
     protected int size;
 

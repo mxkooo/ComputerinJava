@@ -1,3 +1,5 @@
+package ComputerParts;
+
 public class Processor {
     private double ghz;
     private int cache;
