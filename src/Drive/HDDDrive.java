@@ -15,6 +15,7 @@ public class HDDDrive extends AbstractDrive implements Drive {
 
     @Override
     public void listFiles() {
+            System.out.println("-- FILES --");
         for (File file : files) {
             System.out.println(file.getName());
         }
@@ -49,6 +50,24 @@ public class HDDDrive extends AbstractDrive implements Drive {
         if (files.size() <= size) {
             files.add(gif);
             size -= gif.getSize();
+        }else {
+            System.out.println("Za mało miejsca na dysku");
+        }
+    }
+    @Override
+    public void addFile(MP3MusicFile mp3) {
+        if (files.size() <= size) {
+            files.add(mp3);
+            size -= mp3.getSize();
+        }else {
+            System.out.println("Za mało miejsca na dysku");
+        }
+    }
+    @Override
+    public void addFile(MP4VideoFile mp4) {
+        if (files.size() <= size) {
+            files.add(mp4);
+            size -= mp4.getSize();
         }else {
             System.out.println("Za mało miejsca na dysku");
         }
